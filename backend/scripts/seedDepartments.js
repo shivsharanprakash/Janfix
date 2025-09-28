@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const Department = require('../src/models/Department'); // correct path to model under src
 
-const MONGO_URI = 'mongodb://127.0.0.1:27017/janfix'; // change DB name if needed
+const MONGO_URI = 'mongodb+srv://PrakashShivsharan:Sharan%401383@cluster0.9qulqdc.mongodb.net/janfix?retryWrites=true&w=majority';
 
 async function seed() {
   try {

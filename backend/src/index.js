@@ -35,7 +35,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: process.env.MONGO_URI,
+    mongoUrl: process.env.MONGO_URI || 'mongodb+srv://PrakashShivsharan:Sharan%401383@cluster0.9qulqdc.mongodb.net/janfix?retryWrites=true&w=majority',
     collectionName: 'sessions'
   }),
   cookie: {
